@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link href='../../static/interface/style.css' rel='stylesheet' type='text/css'>
+        <title>Visual Interface</title>
+        <span id="id_page_name">Home</span>
+    </head>
+    <body>
+        <p>{{myDate}}</p>
+        <div class="wrapper">
+            <span class="sensor" style="opacity: {{opacity1}}"></span>
+            <span id="obj1" class="object"></span>
+        </div>
+        <br>
+        <div class="wrapper">
+            <span class="sensor" style="opacity: {{opacity2}}"></span>
+            <span id="obj2" class="object"></span>
+        </div>
+        <br>
+        <div class="wrapper">
+            <span class="sensor" style="opacity: {{opacity3}}"></span>
+            <span id="obj3" class="object"></span>
+        </div>
+    </body>
+
+    <script>
+        document.getElementById('obj1').style.marginLeft = '{{object1}}';
+        document.getElementById('obj2').style.marginLeft = '{{object2}}';
+        document.getElementById('obj3').style.marginLeft = '{{object3}}';
+        setTimeout(function(){window.location.reload(1);}, 1250);
+    </script>
+</html>
