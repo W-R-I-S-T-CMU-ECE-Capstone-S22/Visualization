@@ -6,7 +6,6 @@ import sys
 
 import time
 import random
-import paho.mqtt.client as mqtt
 
 def main():
     """Run administrative tasks."""
